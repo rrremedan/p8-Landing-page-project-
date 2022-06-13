@@ -1,0 +1,21 @@
+/* colore variables */ 
+:root {
+    --dark-blue: #003b58;
+    --light-blue:#d4e1e7;
+    --crimson:#c9143f;
+    --cyan:#02b4c0;
+    --black:#100f0d;
+}
+body {
+    font-family: 'montserrat', sans-serif; 
+    font-size: 120%;
+    color: var(--black);
+    margin: 0%;
+    font-size: 400;
+}
+h1,h2,h3,h4,{
+    font-weight: 600;
+}
+header, main, footer {
+    margin: 0;
+}
