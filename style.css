@@ -1,5 +1,6 @@
 /* colore variables */ 
-:root {
+:root 
+{
     --dark-blue: #003b58;
     --light-blue:#d4e1e7;
     --crimson:#c9143f;
@@ -16,22 +17,53 @@ body {
     margin: 0%;
     font-size: 400;
 }
-h1,h2,h3,h4,{
+h1,h2,h3,h4, {
     font-weight: 600;
 }
 header, main, footer {
     margin: 0;
 }
+/*buttons */
+a.button {
+    display: inline-block;
+    width: auto;
+    padding: 0.5em 1em ;
+    background-color: var(--dark-blue);
+    border-radius: 1em;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a.button.primary {
+    background-color: var(--cyan);
+}
+
 /*navbar styling*/
+#hero nav {
+    display: flex;
+    justify-content: space-between;
+}
 #hero nav ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
 }
 #hero nav a {
     display: block;
     padding: 0.5em 1em ;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight:bold;
 }
-footer {
+nav a {
+    color: var(--dark-gray);
+}
+/* style the hero unit */
+
+/* other styles*/
+
+footer
+ {
     color: white;
     padding: 1em;
     background-color: var(--dark-blue);
