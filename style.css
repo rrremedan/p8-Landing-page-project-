@@ -5,11 +5,14 @@
     --crimson:#c9143f;
     --cyan:#02b4c0;
     --black:#100f0d;
+    --dark-gray:#555152;
+    --body-bg:#fff;
 }
 body {
     font-family: 'montserrat', sans-serif; 
     font-size: 120%;
     color: var(--black);
+    background-color: var(--body-bg);
     margin: 0%;
     font-size: 400;
 }
@@ -19,3 +22,18 @@ h1,h2,h3,h4,{
 header, main, footer {
     margin: 0;
 }
+/*navbar styling*/
+#hero nav ul {
+    list-style-type: none;
+}
+#hero nav a {
+    display: block;
+    padding: 0.5em 1em ;
+    text-decoration: none;
+}
+footer {
+    color: white;
+    padding: 1em;
+    background-color: var(--dark-blue);
+}
+
