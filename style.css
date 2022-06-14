@@ -42,11 +42,13 @@ a.button.primary {
 #hero nav {
     display: flex;
     justify-content: space-between;
+    padding: 0.5em 1em;
 }
 #hero nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    margin: 0;
 }
 #hero nav a {
     display: block;
@@ -58,14 +60,56 @@ a.button.primary {
 nav a {
     color: var(--dark-gray);
 }
+
 /* style the hero unit */
+#hero {  
+    background-image: linear-gradient(#cddbdc, #d4e1e7);
+}
+#hero-nav {
+    grid-area: nav;
+}
+#sign-up-discount {
+    grid-area: discnt;
+    background-color: var(--crimson);
+    color: var(--body-bg);
+    display: flex;
+    justify-content: center;
+}
+#sign-up-discount b {
+    text-transform: uppercase;
+}
+#tagline {
+    grid-area: tag;
+}
+#products {
+    grid-area: prod;
+}
+#products {
+    font-size: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    column-gap: 2em;
+}
+div.card {
+    padding: 1em;
+}
 
 /* other styles*/
-
-footer
- {
+footer {
     color: white;
     padding: 1em;
     background-color: var(--dark-blue);
 }
 
+@media only screen and ( min-width: 600x) {
+    #hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 2fr 2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        ". nav nav nav nav ."
+        "discnt discnt discnt discnt discnt discnt"
+        ". tag tag . . ."
+        ". prod prod prod prod .";
+    }
+}
