@@ -14,10 +14,10 @@ body {
     font-size: 120%;
     color: var(--black);
     background-color: var(--body-bg);
-    margin: 0%;
-    font-size: 400;
+    margin: 0;
+    font-weight: 400;
 }
-h1,h2,h3,h4, {
+h1,h2,h3,h4 {
     font-weight: 600;
 }
 header, main, footer {
@@ -97,6 +97,7 @@ nav a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     column-gap: 2em;
+    background-color: white;
 }
 div.card {
     padding: 1em;
@@ -109,9 +110,9 @@ footer {
     background-color: var(--dark-blue);
 }
 
-@media only screen and ( min-width: 600x) {
+@media only screen and ( min-width: 600px) {
     #hero {
-        background-image: url();
+        background-image: url('PICTURE/muffins-ge77e97513_1920.jpg');
         background-size: cover;
         background-position: -750px 100px;
         display: grid;
@@ -119,14 +120,16 @@ footer {
         grid-template-rows: 
             minmax(100px, auto)
             minmax(80px, auto)
-            minmax(50vh,60vh);
+            minmax(50vh,60vh)
+            auto;
         grid-template-areas: 
         ". nav nav nav nav ."
         "discnt discnt discnt discnt discnt discnt"
         ". tag tag . . ."
+        'prod prod prod prod prod prod ';
     }
 
-    section#tagling {
+    section#tagline {
         background-color: rgba(0,0,0,0);
     }
 }
