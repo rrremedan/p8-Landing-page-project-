@@ -44,6 +44,8 @@ a.button.primary {
     justify-content: space-between;
     padding: 0.5em 1em;
     font-size: small;
+    background-color: white;
+    grid-area: nav;
 }
 #hero nav ul {
     list-style-type: none;
@@ -113,8 +115,8 @@ footer {
 @media only screen and ( min-width: 600px) {
     #hero {
         background-image: url('PICTURE/muffins-ge77e97513_1920.jpg');
-        background-size: cover;
-        background-position: -750px 100px;
+        background-size: contain;
+        background-position: right 150px;
         display: grid;
         grid-template-columns: 1fr 1fr 2fr 2fr 2fr 1fr;
         grid-template-rows: 
@@ -123,7 +125,7 @@ footer {
             minmax(50vh,60vh)
             auto;
         grid-template-areas: 
-        ". nav nav nav nav ."
+        "nav nav nav nav nav nav"
         "discnt discnt discnt discnt discnt discnt"
         ". tag tag . . ."
         'prod prod prod prod prod prod ';
@@ -135,11 +137,12 @@ footer {
 }
 @media only screen and (min-width:900px) {
     #hero {
-        background-position: -550px 100px;
+        background-position: right 100px;
     }
 }
 @media only screen and (min-width: 1100px) {
     #hero {
-        background-position: bottom left;
+        background-position: bottom right;
+        background-position: right top;
     }
 }
